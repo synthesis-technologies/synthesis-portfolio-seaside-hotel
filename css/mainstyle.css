@@ -1,0 +1,165 @@
+@import url('./__variables.css');
+
+/* <-----------sidesocial------> */
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a  {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  .sidesocialicon{
+    transform: rotate(-90deg);
+  }
+  @media (max-width:1280px){
+    .icon-bar{
+        display: none;
+    }
+}
+
+/* <-------navbar--------> */
+.dropdown-menu {
+    display: none;
+}
+.nav-item a,
+.nav-item a:hover {
+    color: black;
+}
+
+.dropdown:hover
+.dropdown-content {
+    display: block;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+.mainbtn:hover{
+    color: #CA8E46 !important;
+}
+
+.slidebtn:hover,
+.slidebtn:focus {
+  box-shadow: inset 13.5em 0 0 0 var(--hover);
+  transition-duration: 0.7s;
+}
+
+.slidebtn {
+    --hover: #654522;
+    background-color: #CA8E46;
+  }
+  .slidebtnwid{
+    width: 28%;
+  }
+
+  button {
+    color: var(--color);
+    transition: 0.25s;
+  }
+
+@media (max-width:1280px){
+    .slidebtn{
+        display: none;
+    }
+}
+
+.backvideo{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-attachment: fixed;
+}
+
+/* <-------navbar close-----> */
+
+/* <---------Hero Start------> */
+.herozin{
+    z-index: 100000 !important;
+}
+
+.herocontent{
+    font-size: 60px !important;
+    font-weight: 600;
+}
+.heroparacontent{
+    font-weight: 500;
+}
+.center{
+  padding: 9rem 9rem;
+  width: 70%;
+}
+
+@media (max-width:1280px){
+    .center{
+        padding: 3rem 2rem;
+        width: 100%;
+      }
+}
+
+
+
+
+.bg-color-1{
+  background-color: #A27238;
+}
+.bg-color-2{
+  background-color: #79552A;
+}
+.bg-color-3{
+  background-color: #51391C;
+}
+
+
+
+
+.parallax{
+  background-image: url(../image/7.jpg);
+}
+
+
+
+
+
+.parallax {
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: url(../image/7.jpg);
+  background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+/* Make the container relative */
+
+
+.swap-on-hover__front-image:hover{
+  display: none;
+}
+
+
+
+
+
+
