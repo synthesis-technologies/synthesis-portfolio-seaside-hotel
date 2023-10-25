@@ -1,6 +1,11 @@
 @import url('./__variables.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap');
+
 /* <-----------sidesocial------> */
+.font-family-test{
+  font-family: 'Cormorant Garamond', serif !important;
+}
 
 .icon-bar {
     position: fixed;
@@ -123,15 +128,7 @@
 }
 
 
-
-
-.parallax{
-  background-image: url(../image/7.jpg);
-}
-
-
-
-
+/* <=========paralex start===========> */
 
 .parallax {
   background-position: left center;
@@ -142,24 +139,157 @@
   background-attachment: fixed;
 }
 
+.mainheading::before {
+    content: "";
+    width: 45px;
+    height: 3px;
+    position: absolute;
+    bottom: -4px;
+    left: 48%;
+    border-radius: 1px;
+    background-color: #CA8E46;
+}
 
+.topheading{
+  background-color: #CA8E46;
+  top: 1rem;
+  left: 11rem;
+}
+.bottomcontent{
+  background-color: #403f3d80;
+  top: 14.3rem;
+  /* background: linear-gradient(0deg, rgba(32, 32, 32,.75) 25%, rgba(32, 32, 32,0) 100%);
+  top: 13.5rem; */
 
-
-
-
-
-
-
-
-/* Make the container relative */
-
-
+}
+.swap-on-hover__front-image{
+  display: block;
+  
+}
 .swap-on-hover__front-image:hover{
   display: none;
 }
+.swap-on-hover__back-image{
+  display: none;
+}
+
+.swap-on-hover__front-image:hover + .swap-on-hover__back-image{
+  display: block; 
+}
+.contentsection{
+  background-color: #403f3d80;
+  /* background: linear-gradient(0deg, rgb(32 32 32 / 57%) 25%, rgb(46 42 42 / 0%) 100%); */
+}
+
+.slidebtnparalex:hover,
+.slidebtnparalex:focus {
+  box-shadow: inset 21.8em 0 0 0 var(--hover);
+  transition-duration: 0.7s;
+}
+
+.slidebtnparalex {
+    --hover: #CA8E46;
+    background-color: transparent;
+    border: 1px solid grey !important;
+  }
+  .slidebtnwid{
+    width: 28%;
+  }
 
 
+  @media (max-width:1280px){
+    .bottomcontent{
+      top: 12.6rem;}
+}
+
+/* <==========paralex close=======> */
+
+/* <=========container===========> */
+
+.mainheading1::before {
+  content: "";
+  width: 45px;
+  height: 3px;
+  position: absolute;
+  bottom: -12px;
+  left: 1%;
+  border-radius: 1px;
+  background-color: #CA8E46;
+}
 
 
+/* <========Testimonials
+========> */
+
+.carousalcont {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 50px;
+  padding: 10rem !important;
+}
+
+.image {
+  background-image: url(../image/4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#moodular {
+  overflow: hidden;
+}
+
+#moodular,
+#moodular li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+#moodular,
+#moodular li {
+  height: 600px;
+}
+
+#moodular li p {
+  display: block;
+  height: 600px;
+}
+
+#moodular li p span {
+  display: inline-block;
+  /* padding: 10px 10px; */
+  color: #FFF;
+  margin: 0rem 10rem;
+}
+
+@media (max-width:1280px){
+  #moodular li p span {
+    margin: 10rem 0rem;
+
+  }
+
+  .carousalcont {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 1rem !important;
+  }
+  #moodular li p {
+    height: 400px;
+  }
+  #moodular,
+#moodular li {
+  height: 400px;
+}
+}
+
+/* <=============footer==========> */
+
+.footer{
+  background-color: #25221f;
+}
 
 
