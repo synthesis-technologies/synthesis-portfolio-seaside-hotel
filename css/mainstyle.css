@@ -148,6 +148,7 @@
     left: 48%;
     border-radius: 1px;
     background-color: #CA8E46;
+    z-index: 1000;
 }
 
 .topheading{
@@ -250,12 +251,12 @@
 
 #moodular,
 #moodular li {
-  height: 600px;
+  height: 500px;
 }
 
 #moodular li p {
   display: block;
-  height: 600px;
+  height: 500px;
 }
 
 #moodular li p span {
@@ -267,7 +268,7 @@
 
 @media (max-width:1280px){
   #moodular li p span {
-    margin: 10rem 0rem;
+    margin: 5rem 0rem;
 
   }
 
@@ -278,11 +279,11 @@
     padding: 1rem !important;
   }
   #moodular li p {
-    height: 400px;
+    height: 300px;
   }
   #moodular,
 #moodular li {
-  height: 400px;
+  height: 300px;
 }
 }
 
