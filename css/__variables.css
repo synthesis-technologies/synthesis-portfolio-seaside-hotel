@@ -1,9 +1,15 @@
 @import url('./fonts.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+
 /* CSS Variables */
 :root {
-    --primary-color:#CA8E46;
-    --primary-color-1-rgb:202, 142, 70;
+    --primary-color: #CA8E46;
+    --primary-color-1-rgb: 202, 142, 70;
 
     /* font-family variables */
     --Heebo: 'Heebo';
@@ -13,8 +19,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Heebo', sans-serif;
-    --bg-dark-color: 49, 43, 36;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html,
@@ -24,7 +30,7 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     word-spacing: 0.1rem;
-    background: #22222261;
+    /* background: #22222261; */
     font-size: 14.5px;
     font-weight: 300;
 }
@@ -33,6 +39,15 @@ body {
 .primary-color {
     color: var(--primary-color);
 }
+
+.font-family-test {
+    font-family: 'Cormorant Garamond', serif !important;
+}
+
+.font-family-cursive {
+    font-family: 'Mrs Saint Delafield' !important;
+}
+
 
 @keyframes up-down {
     0% {

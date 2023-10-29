@@ -1,12 +1,10 @@
 @import url('./__variables.css');
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap');
-
 /* <-----------sidesocial------> */
-.font-family-test{
-  font-family: 'Cormorant Garamond', serif !important;
-}
 
+.wordspace{
+  letter-spacing: 3.5px ;
+}
 .icon-bar {
     position: fixed;
     top: 50%;
@@ -135,8 +133,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background: url(../image/7.jpg);
+  background: url(../image/two-room.jpg);
   background-attachment: fixed;
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0, 0.4)
 }
 
 .mainheading::before {
@@ -154,11 +154,13 @@
 .topheading{
   background-color: #CA8E46;
   top: 1rem;
-  left: 11rem;
+  right: 1rem;
+  font-size: 12px;
+  width: 40%;
 }
 .bottomcontent{
   background-color: #403f3d80;
-  top: 14.3rem;
+  bottom: 0rem;
   /* background: linear-gradient(0deg, rgba(32, 32, 32,.75) 25%, rgba(32, 32, 32,0) 100%);
   top: 13.5rem; */
 
@@ -191,7 +193,7 @@
 .slidebtnparalex {
     --hover: #CA8E46;
     background-color: transparent;
-    border: 1px solid grey !important;
+    border: 2px solid grey !important;
   }
   .slidebtnwid{
     width: 28%;
@@ -288,9 +290,332 @@
 }
 
 /* <=============footer==========> */
-
 .footer{
   background-color: #25221f;
 }
 
+/* <================about============> */
+.parallaxabout{
+  background-size: cover !important;
+  background-repeat:no-repeat !important;
+  background-color: rgba(0,0,0, 0.55); 
+  background-image: url(../image/about-bg.jpg) ;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
 
+.imgsvg{
+  background-color: #CA8E46;
+}
+.mainabt1{
+  font-size: 5.5rem !important;
+}
+
+.mainabt{
+  letter-spacing: 4px;
+}
+.footerabout{
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0, 0.4);
+}
+
+/* <============about close==========> */
+
+/* <=========Room==========> */
+
+.parallaxtworoom{
+    background-size: cover !important;
+    background-repeat:no-repeat !important;
+    background: url(../image/two-room.jpg) ;
+    background-attachment: fixed;
+    /* background-color: rgba(0,0,0, 0.4);  */
+    /* background-blend-mode: overlay; */
+}
+.topheadingroom{
+  background-color: #CA8E46;
+  top: 1rem;
+  right: 1rem;
+  font-size: 12px;
+  width: 40%;
+}
+.bottomcontentroom{
+  background-color: #403f3d80;
+  bottom: 0rem;
+}
+
+.slidebtnparalexroom:hover,
+.slidebtnparalexroom:focus {
+  box-shadow: inset 32.3em 0 0 0 var(--hover);
+  transition-duration: 0.8s;
+}
+
+.slidebtnparalexroom {
+    --hover: #CA8E46;
+    background-color: transparent;
+    border: 2px solid grey !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <==============offer==========> */
+.parallaxoffer{
+  background-size: cover !important;
+  background-repeat:no-repeat !important;
+  background-color: rgba(0,0,0, 0.55);
+  background: url(../image/offer/offer-banner.jpg) ;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+.card{
+  background-image: url(../image/offer/1.jpg);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-color: rgba(32, 32, 32, 0.55);
+  transition: all 0.5s;
+  border: 2px dotted white;
+  height: 60vh;
+  transform: scale(1);
+}
+.card:hover{
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0, 0.55);
+  transform: scale(1.1);
+}
+.card1{
+  background-image: url(../image/offer/2.jpg);
+}
+.card2{
+  background-image: url(../image/offer/3.jpg);
+}
+
+.dateoffer{
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0, 0.55);
+  
+}
+
+/* <===========offer close=========> */
+
+
+/* <=============Gallery========> */
+
+.parallaxlgallery{
+    background-size: cover !important;
+    background-repeat:no-repeat !important;
+    background-color: rgba(0,0,0, 0.55);
+    background: url(../image/gallery/bg-gallery.jpg) ;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+.img-fluid{
+  cursor: pointer;
+}
+.secondrow{
+  margin-top: -217px !important;
+}
+
+@media (max-width: 580px) {
+  .secondrow {
+    margin-top: 25px !important;
+  }
+}
+
+@media (max-width: 780px) {
+  .secondrow {
+    margin-top: 25px !important;
+  }
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* <=============Gallery========> */
+
+/* <===========Blog==========> */
+
+.parallaxblog{
+  background-size: cover !important;
+  background-repeat:no-repeat !important;
+  background-color: rgba(0,0,0, 0.55);
+  background: url(../image/blog/blog-banner.jpg) ;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+.cardtran{
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0, 0.75) !important;
+  height: 68vh;
+  background-size: cover;
+}
+
+.cardtran {
+  background-image: url(../image/blog/1.jpg);
+  background-position: center center;
+  background-size: 100% 0%;
+  transition: background-size .5s 0.5s ease-in-out;
+  background-repeat: no-repeat;
+}
+
+.cardtran:hover:hover {
+  background-size: 100% 100%;
+  color: #fff;
+  transition: 0.5s;
+}
+.cardtran2{
+  background-image:url(../image/blog/2.jpg) ;
+}
+.cardtran3{
+  background-image: url(../image/blog/3.jpg);
+}
+.cardtran4{
+  background-image: url(../image/blog/4.jpg);
+}
+.cardtran5{
+  background-image: url(../image/blog/5.jpg);
+}
+.cardtran6{
+  background-image: url(../image/blog/6.jpg);
+}
+
+/* <===========Blog Close=========> */
+
+/* <=============Contact=========> */
+.parallaxcontact{
+  background-size: cover !important;
+  background-repeat:no-repeat !important;
+  background-color: rgba(0,0,0, 0.55);
+  background: url(../image/contact-banner.jpg) ;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+.containercontact{
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0, 0.75) !important;
+  background-size: cover;
+}
+.border-top{
+  width: 90%;
+  border-color: grey !important;
+}
+.firstcol{
+  color: #CA8E46;
+}
