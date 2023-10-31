@@ -33,7 +33,7 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
 
-  <title>Seaside-Gallery</title>
+  <title>Seaside Booking</title>
 
   <!-- Favicons -->
   <link href="./image/favicon.png" rel="shortcut icon">
@@ -62,6 +62,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
   <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
@@ -69,7 +71,7 @@
 
 </head>
 
-<body class="parallaxlgallery">
+<body class="parallaxabout">
 
   <div class="icon-bar herozin">
     <a href="/" class="fs-6"><i class="fa-brands fa-facebook-f"></i></a>
@@ -115,7 +117,7 @@
                     <div class="col-lg-12 col-12 my-2 px-0">
                       <div>
                         <ul class="list-unstyled">
-                          <li class="nav-item"><a href="two-room.html"
+                          <li class="nav-item"><a href="/two-room.html"
                               class="ps-2 nav-link nav-link-hover dropdown-item mainbtn text-secondary">2 Columns</a>
                           </li>
                           <li class="nav-item"><a href="/two-room.html"
@@ -170,67 +172,130 @@
 
     <!-- <===========================container start===========================> -->
 
-    <div class="container p-lg-5 mt-lg-0 mt-5">
+    <div class="container p-lg-0 mt-lg-0 mt-5 ">
       <div class="row">
         <h1 class="text-center text-white">
-          <span class="font-family-cursive primary-color fs-1 mainabt1">Latest </span><br><span
-            class="mainabt fw-semibold">GALLERY</span>
+          <span class="font-family-cursive primary-color fs-1 mainabt1">Make a </span><br><span
+            class="mainabt fw-semibold">BOOKING</span>
         </h1>
       </div>
-          <div class="container">
-              <div class="row g-4 py-4">
 
-                  <div class="col-md-4 h-25" id="pop">
-                              <img src="image/gallery/gallery-item-1.jpg" id="myImg" class="img-fluid" alt="/">
-                  </div>
+      <div class="col d-flex justify-content-center ">
+        <div class="row text-center containerbooking  px-3 py-5 my-lg-5 my-5 w-50 ">
+          <div class="col-md-12 themed-grid-col">
+            <div class="pb-3 text-white fw-bold">
+              <div class="row ">
 
-                  <div class="col-md-4 h-25" id="pop">
-                              <img src="image/gallery/gallery-item-2.jpg" id="myImg11" class="img-fluid" alt="/">
-                  </div>
-                  
-                  <div class="col-md-4  " id="pop">
-                              <img src="image/gallery/gallery-item-3.jpg" id="myImg12" class="img-fluid" alt="/">
-                  </div>
-                  
-                  <div class="col-md-4 secondrow" id="pop">
-                              <img src="image/gallery/gallery-item-4.jpg" id="myImg13" class="img-fluid" alt="/">
-                  </div>
+                <div class="col-md-12 my-3">
+                  <h5 class="text-white wordspace text-start"> CHOOSE DATE
+                  </h5>
+                  <input class="daterange text-white rounded-0 w-100 py-2" type="text" name="daterange"
+                    value="01/01/2023 - 01/15/2023" />
+                </div>
 
-                  <div class="col-md-4 secondrow " id="pop">
-                              <img src="image/gallery/gallery-item-5.jpg" id="myImg14" class=" img-fluid" alt="/">
-                  </div>
-                  
-                  <div class="col-md-8 " id="pop">
-                              <img src="image/gallery/gallery-item-6.jpg" id="myImg15" class="img-fluid" alt="/">
+                <div class="row d-flex justify-content-between  my-4">
+                  <div class="col-md-4 text-start">
+                    <h6 class="text-white wordspace text-start"> ADULT
+                    </h6>
+
+                    <span class="plus bg-color-1 px-3 py-1">-</span>
+                        <input type="text" value="0" class="w-25 text-center text-white bgform">
+                    <span class="plus bg-color-1 px-3 py-1">+</span>
+
                   </div>
 
-                  <div class="col-md-4" id="pop">
-                              <img src="image/gallery/gallery-item-7.jpg" id="myImg16" class="img-fluid" alt="/">
+                  <div class="col-md-4 text-start my-lg-0 my-4">
+                    <h6 class="text-white wordspace text-start"> CHILDREN
+                    </h6>
+
+                    <span class="plus bg-color-1 px-3 py-1">-</span>
+                        <input type="text" value="0" class="w-25 text-center text-white bgform">
+                    <span class="plus bg-color-1 px-3 py-1">+</span>
                   </div>
-                  
+
+                  <div class="col-md-4 text-start">
+                    <h6 class="text-white wordspace text-start"> ROOM
+                    </h6>
+                    <span class="plus bg-color-1 px-3 py-1">-</span>
+                        <input type="text" value="0" class="w-25 text-center text-white bgform">
+                    <span class="plus bg-color-1 px-3 py-1">+</span>
+
+                  </div>
+
+
+
+                </div>
+
+                <div class="col text-start">
+                  <div class="select-room">
+                    <h5 class="text-white wordspace"> SELECT ROOM
+                    </h5>
+                    <select name="Room Type" id="room-type" class="form-control rounded-0 bgform">
+                      <option value="Standart Room">Standart Room</option>
+                      <option value="Deluxe Room">Deluxe Room</option>
+                      <option value="Premier Room">Premier Room</option>
+                      <option value="Family Suite">Family Suite</option>
+                      <option value="Luxury Suite">Luxury Suite</option>
+                      <option value="President Suite">President Suite</option>
+                    </select>
+                  </div>
+
+                  <!-- <div class="form-error">Please choose a Subject</div> -->
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="d-lg-flex justify-content-evenly">
+              <div class="col-md-6 themed-grid-col text-white text-start">
+                <h5 class="text-white wordspace"> SEND US MESSAGE
+                </h5>
+
+                <div class="col-12">
+                  <label class="form-label "><span class="text-muted"></span></label>
+                  <input type="Name" class="form-control rounded-0 bgform" id="name" placeholder="Your Name">
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label"><span class="text-muted"></span></label>
+                  <input type="Email" class="form-control rounded-0 bgform" id="Email" placeholder="Your Email">
+                </div>
+
+                <div class="col-12 ">
+                  <label class="form-label "><span class="text-muted"></span></label>
+                  <input type="Phone" class="form-control rounded-0 bgform" id="Phone" placeholder="Your Phone">
+                </div>
               </div>
 
-              <div id="myModal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="img01">
-                <div id="caption"></div>
+              <div class="col-md-6 themed-grid-col text-white text-start mt-0 mt-lg-4">
+                <div class="col-12 px-lg-3 px-0 ">
+                  <label class="form-label "><span class="text-muted"></span></label>
+                  <textarea class="form-control formmessage mt-2 rounded-0 bgform" placeholder="Message"></textarea>
+                </div>
               </div>
 
+            </div>
+
+            <div class="col-md-6 themed-grid-col text-white text-start mt-0 mt-lg-4">
+              <button
+                class="slidebtnform text-white border rounded-0 border-white border-1 py-2 px-5 fw-bold mt-4 bgform">SUBMIT
+                FORM</button>
+            </div>
 
           </div>
-     
 
+        </div>
       </div>
 
-     
+    </div>
+
+    <!-- <===========================container close===========================> -->
 
 
-      <!-- <===========================container close===========================> -->
-
-
-      <!-- <======================footer start==========================> -->
-      <div class="container-fluid footerabout p-3">
-        <div class="container">
+    <!-- <======================footer start==========================> -->
+    <div class="container-fluid footerabout p-3">
+      <div class="container">
         <div class="d-flex flex-column flex-sm-row justify-content-between text-white">
           <p class="m-0">&copy; All rights reserved | Designed By <span><a href="https://synthesis-technologies.com/" class="text-decoration-none">Synthesis Technologies</a> </span></p>
 
@@ -253,9 +318,9 @@
 
         </div>
       </div>
-      </div>
+    </div>
 
-      <!-- <========================footer close=====================> -->
+    <!-- <========================footer close=====================> -->
 
   </section>
 
@@ -266,9 +331,11 @@
 
   <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-
-
   <!-- Template Main JS File -->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="/js/customjs.js"></script>
 
   <script src="/js/carousal/core.js"></script>
@@ -279,6 +346,16 @@
 
   <script src="/js/carousal/main.js"></script>
   <script src="/js/carousal/pagination.js"></script>
+
+  <script>
+    $(function () {
+      $('input[name="daterange"]').daterangepicker({
+        opens: 'left'
+      }, function (start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+      });
+    });
+  </script>
 
 </body>
 

@@ -62,10 +62,13 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="vendor/owlCarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/owlCarousel/assets/owl.theme.default.min.css">
 
   <!-- Template Main CSS File -->
   <link href="./css/mainstyle.css" rel="stylesheet">
@@ -78,7 +81,7 @@
     <a href="/" class="fs-6"><i class="fa-brands fa-facebook-f"></i></a>
     <a href="/" class="fs-6"><i class="fa-brands fa-twitter"></i></a>
     <a href="/" class="fs-6 mb-3"><i class="fa-brands fa-instagram"></i></a>
-    <a href="/" class="text-decoration-none sidesocialicon fs-6">Book Now</a>
+    <a href="/booking.html" class="text-decoration-none sidesocialicon fs-6">Book Now</a>
   </div>
 
 
@@ -89,7 +92,7 @@
     <nav class="navbar navbar-expand-lg px-0 px-lg-5">
 
       <div class="container-fluid">
-        <a class="navbar-brand d-flex mx-0" href="/"><img className="Img1" src='./image/logo.png' alt="Img 1"></img></a>
+        <a class="navbar-brand d-flex mx-0" href="/index.html"><img className="Img1" src='./image/logo.png' alt="Img 1"></img></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,12 +105,12 @@
             <ul class="navbar-nav text-end mx-auto">
               <li class="nav-item text-start">
                 <a class="ps-2 nav-link active nav-link-active text-white mainbtn  me-lg-3 me-0" aria-current="page"
-                  href="#">Home</a>
+                  href="/index.html">Home</a>
               </li>
 
               <li class="nav-item">
                 <a class="ps-2 nav-link active nav-link-hover text-start text-white  mainbtn me-lg-3 me-0"
-                  aria-current="page" href="#">About</a>
+                  aria-current="page" href="/about.html">About</a>
               </li>
 
               <li class="nav-item dropdown text-start">
@@ -118,13 +121,13 @@
                     <div class="col-lg-12 col-12 my-2 px-0">
                       <div>
                         <ul class="list-unstyled">
-                          <li class="nav-item"><a href="#"
+                          <li class="nav-item"><a href="/two-room.html"
                               class="ps-2 nav-link nav-link-hover dropdown-item mainbtn text-secondary">2 Columns</a>
                           </li>
-                          <li class="nav-item"><a href="#"
+                          <li class="nav-item"><a href="/two-room.html"
                               class="ps-2 nav-link nav-link-hover dropdown-item mainbtn text-secondary">3 Columns</a>
                           </li>
-                          <li class="nav-item"><a href="#"
+                          <li class="nav-item"><a href="/room-single.html"
                               class="ps-2 nav-link nav-link-hover dropdown-item mainbtn text-secondary">Room Single</a>
                           </li>
                         </ul>
@@ -136,34 +139,34 @@
 
               <li class="nav-item">
                 <a class="ps-2 nav-link active nav-link-hover text-start text-white  mainbtn me-lg-3 me-0"
-                  aria-current="page" href="#">Booking</a>
+                  aria-current="page" href="/booking.html">Booking</a>
               </li>
 
               <li class="nav-item">
                 <a class="ps-2 nav-link active nav-link-hover text-start text-white  mainbtn me-lg-3 me-0"
-                  aria-current="page" href="#">Offers</a>
+                  aria-current="page" href="/offer.html">Offers</a>
               </li>
 
               <li class="nav-item">
                 <a class="ps-2 nav-link active nav-link-hover text-start text-white  mainbtn me-lg-3 me-0"
-                  aria-current="page" href="#">Blog</a>
+                  aria-current="page" href="/blog.html">Blog</a>
               </li>
 
               <li class="nav-item">
                 <a class="ps-2 nav-link active nav-link-hover text-start text-white  mainbtn me-lg-3 me-0"
-                  aria-current="page" href="#">Gallery</a>
+                  aria-current="page" href="/gallery.html">Gallery</a>
               </li>
 
               <li class="nav-item">
                 <a class="ps-2 nav-link active nav-link-hover text-start text-white  mainbtn " aria-current="page"
-                  href="#">Contact</a>
+                  href="/contact.html">Contact</a>
               </li>
 
             </ul>
           </div>
         </div>
 
-        <button class="slidebtn text-white border-0 py-2 px-5 fw-bold ">BOOKING</button>
+        <button class="slidebtn text-white border-0 py-2 px-5 fw-bold "><a class="text-decoration-none text-white" href="/booking.html"> BOOKING </a></button>
 
       </div>
     </nav>
@@ -182,37 +185,113 @@
       </div>
 
       <div class="row footerabout ">
-        
+        <!-- <div class="col-12" style="height: 70vh;"> -->
+        <!-- <div class="owl-carousel owl-theme">
+            <div class="item"><h4>1</h4></div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+            <div class="item"><h4>4</h4></div>
+            <div class="item"><h4>5</h4></div>
+            <div class="item"><h4>6</h4></div>
+            <div class="item"><h4>7</h4></div>
+            <div class="item"><h4>8</h4></div>
+            <div class="item"><h4>9</h4></div>
+            <div class="item"><h4>10</h4></div>
+            <div class="item"><h4>11</h4></div>
+            <div class="item"><h4>12</h4></div>
+        </div> -->
+
+        <div class="col-md-12 d-flex justify-content-between ">
+          <img class="w-50 p-3" src="./image/room-single/pf-1.jpg">
+          <img class="w-50 p-3" src="./image/room-single/pf-1.jpg">
+        </div>
+
+        <!-- <div class="col ">
+          <div class="w-100 text-center p-4 border d-flex justify-content-between">
+            <span class="text-white w-25">
+              <img src="/image/svg/user.svg" alt="/"> 2 Guests
+            </span>
+
+
+            <span class=" text-white w-25">
+              <img src="/image/svg/floorplan.svg" alt="/"> 70 ft
+            </span>
+
+            <span class=" text-white w-25">
+              <img src="/image/svg/bed.svg" alt="/"> $79 / Night
+            </span>
+
+            <button class="slidebtn text-white border-0 py-2 px-5 fw-bold ">BOOKING</button>
+
+          </div>
+        </div> -->
+
+        <div class=" d-flex justify-content-center align-items-center">
+          <div class="row p-4 border d-flex justify-content-between w-100 mx-3 ">
+            <div class="col-lg-3 col-md-6 col-12 ">
+              <span class="text-white w-25 fs-5">
+                <img class="svgroom" src="/image/svg/user.svg" alt="/"> 2 Guests
+              </span>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-3">
+              <span class=" text-white w-25 fs-5">
+                <img class="svgroom" src="/image/svg/floorplan.svg" alt="/"> 70 ft
+              </span>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-3">
+              <span class=" text-white w-25 fs-5">
+                <img class="svgroom" src="/image/svg/bed.svg" alt="/"> $79 / Night
+              </span>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 ">
+              <button class="slidebtn text-white border-0 py-2 px-5 fw-bold ">BOOK NOW</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row mb-3 text-center my-lg-5 my-3 mx-2 ">
+          <div class="col-md-8 themed-grid-col text-white">
+            <h4 class="text-start fw-bold">ROOM OVERVIEW</h4>
+            <p class="single-room-content ">Amet nulla officia duis reprehenderit do labore aute pariatur anim consequat ullamco elit in duis incididunt eu officia do voluptate anim nulla officia id cillum esse in velit anim dolor enim exercitation veniam do deserunt dolor in id dolor culpa reprehenderit aute cillum amet sunt mollit incididunt quis qui ut enim adipisicing nostrud aliquip esse nostrud duis enim nisi id in est ea incididunt pariatur non aute ullamco dolor est duis ut sint magna sint laboris dolore nulla et ut reprehenderit dolore consequat magna aliqua dolor in cupidatat ut consequat amet eiusmod qui adipisicing deserunt ullamco est mollit mollit tempor cillum enim est consectetur pariatur nulla fugiat deserunt dolore nisi laboris pariatur et nisi fugiat dolore cupidatat id consectetur aliqua in adipisicing enim in ullamco do id sit nulla sint ea ea pariatur adipisicing dolor tempor dolor eiusmod non.</p>
+          </div>
+
+          <div class="col-md-4 themed-grid-col text-white text-start">
+
+            <h4 class="text-start fw-bold"> ROOM FACILITIES</h4>
+
+            <h6 class="text-light mb-2 "><i class="bi bi-check2-all check me-1 fs-3"></i>48" HD TV with more than 60 channels</h6>
+
+            <h6 class="text-light mb-2 "><i class="bi bi-check2-all check me-1 fs-3"></i>Coffee and tea makers</h6>
+
+            <h6 class="text-light mb-2 "><i class="bi bi-check2-all check me-1 fs-3"></i>Hot & cold bathing</h6>
+
+            <h6 class="text-light mb-2 "><i class="bi bi-check2-all check me-1 fs-3"></i>High comfortable mattress bed</h6>
+
+            <h6 class="text-light mb-2 "><i class="bi bi-check2-all check me-1 fs-3"></i>Hight quality bed sheets</h6>
+
+            <h6 class="text-light mb-2 "><i class="bi bi-check2-all check me-1 fs-3"></i>Free WIFI internet connection</h6>
+          </div>
+        </div>
+
+
       </div>
-
-      <div class="owl-carousel owl-theme">
-        <div class="item"><h4>1</h4></div>
-        <div class="item"><h4>2</h4></div>
-        <div class="item"><h4>3</h4></div>
-        <div class="item"><h4>4</h4></div>
-        <div class="item"><h4>5</h4></div>
-        <div class="item"><h4>6</h4></div>
-        <div class="item"><h4>7</h4></div>
-        <div class="item"><h4>8</h4></div>
-        <div class="item"><h4>9</h4></div>
-        <div class="item"><h4>10</h4></div>
-        <div class="item"><h4>11</h4></div>
-        <div class="item"><h4>12</h4></div>
     </div>
 
 
-      
-
     </div>
 
-      <!-- <===========================container close===========================> -->
+    <!-- <===========================container close===========================> -->
 
 
-      <!-- <======================footer start==========================> -->
-      <div class="container-fluid footerabout p-3">
-        <div class="container">
+    <!-- <======================footer start==========================> -->
+    <div class="container-fluid footerabout p-3">
+      <div class="container">
         <div class="d-flex flex-column flex-sm-row justify-content-between text-white">
-          <p class="m-0">&copy; All rights reserved | Designed By Synthesis Technologies</p>
+          <p class="m-0">&copy; All rights reserved | Designed By <span><a href="https://synthesis-technologies.com/" class="text-decoration-none">Synthesis Technologies</a> </span></p>
 
           <ul class="list-unstyled d-flex justify-content-center mt-lg-0 mt-2">
             <li class="ms-3"><a class="link-body-emphasis" href="#"><i
@@ -233,8 +312,8 @@
 
         </div>
       </div>
-      </div>
-      <!-- <========================footer close=====================> -->
+    </div>
+    <!-- <========================footer close=====================> -->
 
   </section>
 
@@ -243,12 +322,10 @@
 
   <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <script src="jquery.min.js"></script>
-<script src="owlcarousel/owl.carousel.min.js"></script>
+  <!-- <script src="jquery.min.js"></script> -->
+  <script src="vendor/owlCarousel/owl.carousel.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="/js/customjs.js"></script>
-
   <script src="/js/carousal/core.js"></script>
 
   <script src="/js/carousal/fade.js"></script>
@@ -256,28 +333,11 @@
   <script src="/js/carousal/jquery.easing.1.3.js"></script>
 
   <script src="/js/carousal/main.js"></script>
+
   <script src="/js/carousal/pagination.js"></script>
 
 
-  <script>
-    $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
-  </script>
-
+  <script src="/js/customjs.js"></script>
 </body>
 
 </html>

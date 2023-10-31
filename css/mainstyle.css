@@ -63,7 +63,7 @@
     background-color: #CA8E46;
   }
   .slidebtnwid{
-    width: 28%;
+    width: 31%;
   }
 
   button {
@@ -195,9 +195,9 @@
     background-color: transparent;
     border: 2px solid grey !important;
   }
-  .slidebtnwid{
+  /* .slidebtnwid{
     width: 28%;
-  }
+  } */
 
 
   @media (max-width:1280px){
@@ -355,42 +355,6 @@
     border: 2px solid grey !important;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* <==============offer==========> */
 .parallaxoffer{
   background-size: cover !important;
@@ -429,10 +393,9 @@
   
 }
 
-/* <===========offer close=========> */
+/* <=======offer close=====> */
 
-
-/* <=============Gallery========> */
+/* <========Gallery======> */
 
 .parallaxlgallery{
     background-size: cover !important;
@@ -547,9 +510,9 @@
   }
 }
 
-/* <=============Gallery========> */
+/* <========Gallery=======> */
 
-/* <===========Blog==========> */
+/* <=======Blog======> */
 
 .parallaxblog{
   background-size: cover !important;
@@ -596,9 +559,9 @@
   background-image: url(../image/blog/6.jpg);
 }
 
-/* <===========Blog Close=========> */
+/* <=========Blog Close=======> */
 
-/* <=============Contact=========> */
+/* <==========Contact=======> */
 .parallaxcontact{
   background-size: cover !important;
   background-repeat:no-repeat !important;
@@ -617,5 +580,66 @@
   border-color: grey !important;
 }
 .firstcol{
+  color: #CA8E46;
+}
+
+.bgform{
+  background-color: transparent !important;
+  border-color: grey !important;
+  color: #fff;
+}
+.formmessage{
+  padding: 3.5rem 0;
+}
+
+::placeholder{
+  color: #fff !important;
+}
+
+.slidebtnform:hover,
+.slidebtnform:focus {
+  box-shadow: inset 13.5em 0 0 0 var(--hover);
+  transition-duration: 0.7s;
+}
+
+.slidebtnform {
+    --hover: #654522;
+    background-color: #CA8E46;
+  }
+
+  .slidebtnform{
+    display: block;
+  }
+
+/* <========contact close======> */
+
+/* <==========booking========> */
+
+.containerbooking{
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0, 0.75) !important;
+  background-size: cover;
+  /* margin: 0 10rem; */
+}
+.daterange{
+  background-color: transparent;
+  border-color: rgb(179, 179, 179) !important;
+}
+
+@media (max-width: 580px) {
+  .containerbooking {
+    width: 100% !important;
+  }
+  
+}
+/* <======booking close=====> */
+
+.svgroom{
+  width: 16%;
+}
+.single-room-content{
+  text-align: justify;
+}
+.check{
   color: #CA8E46;
 }
