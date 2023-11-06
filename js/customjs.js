@@ -264,3 +264,12 @@ carousel.addEventListener("touchend", dragStop);
 //       }
 //   }
 // })
+
+
+
+
+
+
+
+
+
